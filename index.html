@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Учет финансов</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/js/script.js"></script>
+</head>
+<body>
+  <h1>Учет финансов</h1>
+  <form id="expense-form">
+    <input type="date" name="date" required>
+    <input type="text" name="description" placeholder="Описание" required>
+    <input type="number" name="amount" placeholder="Сумма" required step="0.01">
+    <button type="submit">Добавить расход</button>
+  </form>
+  <h2>Расходы за текущий месяц:</h2>
+  <ul id="expenses-list">
+  </ul>
+  <h2>Общая сумма потраченных денег за текущий месяц:</h2>
+  <p id="total-expenses"></p>
+</body>
+</html>
